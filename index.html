@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="main-heading">Expense Tracker</h2>
+      
+      <div class="blnc">
+        <span>
+          <img src="icons8-calculator-80.png" alt="" srcset="" />
+        </span>
+        <h3 class="your-balance">Your Balance</h3>
+    
+        <h1 id="balance">₹ 0.00</h1>
+      </div>
+      <div class="income-Exp-container">
+        <div>
+          <h4>Income</h4>
+          <p id="earning" class="money increase">₹0.00</p>
+        </div>
+        <div>
+          <h4>Expense</h4>
+          <p class="money decrease" id="expense">₹0.00</p>
+        </div>
+      </div>
+      <div class="history-container">
+        <h3 class="h3">History</h3>
+        <ul id="list" class="list"></ul>
+      </div>
+      <div class="tran">
+        <h3 class="h3">Add new transaction</h3>
+        <form class="form">
+          <div class="form-input">
+            <label for="description">Description</label>
+            <input
+              type="text"
+              name=""
+              id="description"
+              class="description"
+              placeholder="Enter description here..."
+            />
+          </div>
+          <div class="form-input">
+            <label for="amount"
+              >Amount <br />
+              (-100 = Expense, 100 = Income)
+            </label>
+            <input type="number" placeholder="Enter amount here..." id="amount" class="amount"/>
+          </div>
+
+          <!-- <div class="date">
+            <label for="date">Date</label>
+            <input type="date" name="" id="date" class="date">
+          </div> -->
+          <button class="btn" id="btn">Add transaction</button>
+        </form>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
